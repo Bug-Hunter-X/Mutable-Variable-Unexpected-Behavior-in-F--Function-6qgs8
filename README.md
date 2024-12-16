@@ -1,0 +1,3 @@
+# F# Mutable Variable Unexpected Behavior
+
+This example demonstrates unexpected behavior when using mutable variables within F# functions.  The `add` function calculates the sum, but subsequent modifications to the mutable variables `x` and `y` outside the function do not affect the result. This is because F# passes values by value to functions, creating copies when mutable variables are involved.  The solution illustrates how to modify the function to achieve a more intuitive result by passing variables as reference types or using a different approach. 
